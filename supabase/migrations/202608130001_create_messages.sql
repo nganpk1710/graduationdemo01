@@ -1,0 +1,4 @@
+-- Applied to project axmmdepqmwadirbvkktc. Keep this file as schema documentation.
+-- The production migration creates public.messages, the private message-images
+-- bucket, public approved-message reads, guest pending inserts, and admin-only
+-- update/delete policies. Admin access is determined by app_metadata.role=admin.
