@@ -44,8 +44,8 @@ export default function Home() {
   const [camera, setCamera] = useState({ x: -55, y: -20, scale: .92 });
   const [dragging, setDragging] = useState(false);
   const dragStart = useRef({ px: 0, py: 0, x: 0, y: 0 });
-  const submissionId = useRef<string>();
-  const submissionImagePath = useRef<string>();
+  const submissionId = useRef<string | undefined>(undefined);
+  const submissionImagePath = useRef<string | undefined>(undefined);
 
   const validMessage = message.trim().length <= 1000 && (message.trim().length > 0 || !!imageFile);
   const validName = anonymous || (name.trim().length > 0 && name.trim().length <= 60);
